@@ -5,7 +5,7 @@
 > Design Experience (DE) project – *Data-Driven Simulation of Urban CO₂ Emissions using Real-Time Intervention Modeling*
 
 ---
-
+ 
 ## Features
 
 - **Live air-quality data** (PM2.5, PM10, CO, NO₂) with automatic **failover**: Open-Meteo → OpenWeatherMap → offline fallback
