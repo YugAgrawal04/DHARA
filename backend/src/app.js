@@ -5,7 +5,7 @@ import { errorHandler, notFound } from './middleware/errorHandler.js';
 import airQualityRoutes from './routes/airQuality.js';
 import geocodeRoutes from './routes/geocode.js';
 import healthRoutes from './routes/health.js';
-import reportRoutes from './routes/report.js';
+import reportRoutes from './routes/report.js';          
 
 export function createApp() {
   const app = express();
