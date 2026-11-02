@@ -31,7 +31,7 @@
 1. On load (and every 15 min), `data.js` calls `GET /api/air-quality` for the current location.
 2. The backend tries **Open-Meteo** first. If it fails, times out, or returns out-of-range values, it tries **OpenWeatherMap**. Every attempt is returned in `attempts[]` so the frontend audit log shows the failover.
 3. If both fail, the frontend keeps the last known (or default) values, shows **"System Offline (Using Fallback)"** and retries after 2 min.
-4. Valid readings are cached per ~110 m grid cell for 5 minutes to save API quota.
+4. Valid readings are cached per ~110 m grid cell for 5 minutes to save API quota. 
 5. Any slider change, marker drop/move/delete, or layer change calls `updateSim()`.
 
 ## 3. Simulation model (`frontend/js/simulation.js`)
